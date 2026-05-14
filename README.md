@@ -1,26 +1,49 @@
 # Proyecto de Probabilidad y Estadística
 
-Este repositorio contiene scripts en Python para la visualización de diferentes distribuciones de probabilidad y conceptos de probabilidad conjunta.
+Este repositorio contiene diversos módulos y scripts en Python desarrollados para el estudio y aplicación de conceptos de probabilidad y estadística. El proyecto se organiza en tres apartados principales, cada uno ubicado en su respectiva carpeta.
 
-## Contenido del Proyecto
+## Estructura del Proyecto
 
-### 1. Distribuciones de Probabilidad (DistribucionesProbabilidad.py)
-Este script genera visualizaciones para tres tipos de distribuciones fundamentales:
+### 1. Probabilidad
+**Carpeta:** `Probabilidad/`
 
-- **Distribución Binomial**: Muestra la probabilidad de obtener un número específico de éxitos en una secuencia de n ensayos independientes (n=5, p=1/6).
-- **Distribución de Poisson**: Representa la probabilidad de que ocurra un número determinado de eventos en un intervalo fijo de tiempo o espacio (λ=1).
-- **Distribución Normal Estándar**: Gráfica la densidad de probabilidad de la distribución normal (campana de Gauss) con media 0 y desviación estándar 1, incluyendo un sombreado del área bajo la curva.
+Este apartado se enfoca en la visualización de distribuciones y conceptos fundamentales de probabilidad.
 
-### 2. Probabilidad Conjunta (Probabilidad_Conjunta.py)
-Este script utiliza gráficos en 3D para ilustrar conceptos de probabilidad conjunta y densidad:
+*   **`DistribucionesProbabilidad.py`**: Genera visualizaciones para distribuciones fundamentales:
+    *   **Binomial**: Éxitos en ensayos independientes.
+    *   **Poisson**: Eventos en intervalos fijos.
+    *   **Normal Estándar**: Campana de Gauss con media 0 y desviación estándar 1.
+*   **`Probabilidad_Conjunta.py`**: Utiliza gráficos 3D para ilustrar:
+    *   Probabilidad conjunta de lanzar dados.
+    *   Funciones de densidad uniforme.
+    *   Regiones de probabilidad (ej. `x + y <= 1`).
 
-- **Dado dos veces**: Superficie 3D que muestra la probabilidad uniforme de los resultados al lanzar un dado dos veces.
-- **Dos dados**: Similar a la anterior, representando la probabilidad conjunta de dos dados independientes.
-- **Densidad uniforme**: Visualización de una función de densidad de probabilidad uniforme en un rango continuo.
-- **Región triangular**: Representación de una región de probabilidad definida por la desigualdad x + y <= 1.
+### 2. Muestreo
+**Carpeta:** `Muestreo/`
+
+Enfocado en el manejo de datos y técnicas de recolección de muestras a partir de una población.
+
+*   **`muestreo.py`**: Implementa técnicas de **muestreo sistemático** sobre un conjunto de datos, comparando estadísticas (promedio, distribución) entre la muestra y la población total.
+*   **`normalizacion_dataset.py`**: Script para la limpieza y estandarización del dataset original para asegurar consistencia en los análisis.
+*   **`poblacion_videojuegos.csv`**: Base de datos de jugadores y sus gastos en compras integradas, utilizada como población para los ejercicios de muestreo.
+
+### 3. Proyecto de Estadística (Control de Gastos)
+**Carpeta:** `ProyectoEstadistica/`
+
+Aplicación práctica de la estadística descriptiva en un sistema de gestión financiera personal.
+
+*   **`CodigoProyecto.py`**: Sistema de "Control de Gastos Universitarios" que permite:
+    *   Registrar gastos por categorías (Alimentación, Transporte, etc.).
+    *   Calcular el nivel de riesgo financiero basado en el ingreso mensual.
+    *   Generar estadísticas descriptivas (promedio, desviación estándar, valor máximo).
+    *   Visualizar la distribución de gastos mediante diagramas de barras.
 
 ## Requisitos
-Para ejecutar estos scripts, se requiere tener instalado:
-- NumPy
-- Matplotlib
-- SciPy
+Para ejecutar los scripts de este repositorio, asegúrese de tener instaladas las siguientes librerías:
+*   **NumPy**: Para cálculos numéricos.
+*   **Pandas**: Para manipulación y análisis de datos.
+*   **Matplotlib**: Para la generación de gráficos y visualizaciones.
+*   **SciPy**: Para funciones estadísticas avanzadas.
+
+---
+*Desarrollado como parte del curso de Probabilidad y Estadística.*
